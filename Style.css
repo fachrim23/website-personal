@@ -1,0 +1,343 @@
+body {
+    font-family: 'Arial', sans-serif; /* Mengatur jenis font */
+    line-height: 1.6; /* Meningkatkan keterbacaan teks */
+    margin: 0; /* Menghilangkan margin default */
+    background-color: #f4f4f4; /* Warna latar belakang */
+}
+
+header {
+    text-align: center; /* Memusatkan teks di dalam header */
+    padding: 20px 0; /* Memberikan ruang atas dan bawah pada header */
+    background: linear-gradient(to right, #364f74, #6fb1fc); /* Gradasi warna pada latar belakang header */
+    color: white; /* Warna teks di dalam header */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan pada header */
+}
+
+.profile-photo {
+    width: 80px; /* Mengatur ukuran foto profil menjadi lebih kecil */
+    height: 80px; /* Mengatur tinggi foto profil menjadi lebih kecil */
+    border-radius: 50%; /* Membuat foto profil berbentuk bulat */
+    object-fit: cover; /* Memastikan foto tetap proporsional */
+    border: 2px solid #007bff; /* Border pada foto profil */
+    margin-bottom: 15px; /* Memberikan ruang bawah */
+}
+
+.navbar {
+    margin-top: 15px; /* Memberikan ruang antara foto profil dan navbar */
+    background: rgba(255, 255, 255, 0.9); /* Warna latar belakang navbar dengan sedikit transparansi */
+    backdrop-filter: blur(10px); /* Efek blur di belakang navbar */
+    border-radius: 10px; /* Sudut yang melengkung pada navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Efek bayangan pada navbar */
+}
+
+.navbar-nav {
+    flex-direction: row; /* Mengatur arah menu horizontal */
+    justify-content: center; /* Memusatkan menu di dalam navbar */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Memberikan jarak antara item menu */
+}
+
+.nav-link {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
+    padding: 10px 15px; /* Ruang dalam untuk tampilan yang lebih baik */
+    border-radius: 5px; /* Sudut yang melengkung pada link */
+    color: #007bff; /* Warna teks link */
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Warna latar belakang saat hover */
+    color: #0056b3; /* Warna teks saat hover */
+}
+
+
+.main {
+    padding: 20px; /* Memberikan ruang di sekitar konten utama */
+    max-width: 1200px; /* Mengatur lebar maksimum untuk tampilan desktop */
+    margin: auto; /* Memusatkan konten utama */
+}
+
+.text-center {
+    text-align: center; /* Meratakan teks di tengah */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk warna dan transformasi */
+}
+
+/* Efek hover pada paragraf */
+.text-center:hover {
+    color: #007BFF; /* Mengubah warna teks saat hover */
+    transform: scale(1.02); /* Memperbesar sedikit saat hover */
+    opacity: 0.9; /* Menambahkan efek transparansi saat hover */
+}
+
+
+.section-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em; /* Ukuran font untuk judul section */
+    color: #333; /* Warna teks judul section */
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transisi halus untuk bayangan dan posisi */
+}
+
+/* Efek hover */
+.experience-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+    transform: translateY(-5px); /* Efek "mengambang" ke atas */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column; /* Tata letak kolom pada layar kecil */
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        transition: box-shadow 0.2s ease, transform 0.2s ease; /* Transisi lebih cepat di layar kecil */
+    }
+}
+
+/* Responsif untuk layar menengah */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .experience-item {
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Bayangan moderat untuk layar menengah */
+    }
+}
+
+/* Responsif untuk layar besar */
+@media (min-width: 1200px) {
+    .experience-item {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12); /* Bayangan lebih kuat pada layar besar */
+    }
+}
+
+
+.experience-date {
+    width: 25%; /* Lebar untuk bagian tanggal */
+    padding-right: 1em; /* Jarak kanan */
+}
+
+.experience-details {
+    width: 75%; /* Lebar untuk detail pengalaman */
+}
+
+.experience-title {
+    font-size: 11.5pt; /* Ukuran font untuk judul */
+    color: rgb(0, 0, 0); /* Warna teks untuk judul */
+}
+
+.experience-title .title {
+    font-weight: bold; /* Membuat teks tebal */
+}
+
+.experience-title .subTitle {
+    font-weight: normal; /* Membuat teks normal */
+    font-style: italic; /* Mengatur teks menjadi italic */
+}
+
+.experience-tasks {
+    padding: 0; /* Menghilangkan padding default */
+    list-style: none; /* Menghilangkan bullet points */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.experience-tasks li {
+    display: flex; /* Menyusun item tugas */
+    align-items: center; /* Memusatkan item secara vertikal */
+    line-height: 21px; /* Jarak antar baris */
+}
+
+.experience-tasks li:before {
+    content: ""; /* Menambahkan titik bulat sebelum setiap tugas */
+    display: inline-block;
+    width: 6px; /* Ukuran titik bulat */
+    height: 6px; /* Ukuran titik bulat */
+    background-color: #000; /* Warna titik bulat */
+    border-radius: 50%; /* Membuat titik bulat */
+    margin-right: 8px; /* Jarak antara titik dan teks */
+}
+
+#workHeading {
+    width: 100%; /* Mengatur lebar heading menjadi 100% */
+    transition: background-color 0.3s ease; /* Transisi untuk latar belakang */
+}
+
+.work-heading-content {
+    display: flex; /* Mengatur flex untuk tata letak heading */
+    align-items: center; /* Memusatkan item secara vertikal */
+}
+
+.work-heading-title {
+    width: 100%; /* Mengatur lebar menjadi 100% untuk centering */
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Memusatkan item secara vertikal */
+    justify-content: center; /* Memusatkan item secara horizontal */
+    border-bottom: 1px solid rgb(0, 0, 0); /* Garis bawah */
+    border-top: 1px solid rgb(0, 0, 0); /* Garis atas */
+    margin-bottom: 20px; /* Jarak bawah */
+    text-align: center; /* Meratakan teks di tengah */
+    padding-top: 3px; /* Padding atas */
+    padding-bottom: 3px; /* Padding bawah */
+    font-weight: bold; /* Menebalkan teks */
+    letter-spacing: 0.5px; /* Jarak antar huruf */
+    font-size: 1.8em; /* Ukuran font untuk judul */
+    line-height: 23px; /* Jarak antar baris */
+    color: #333; /* Warna teks */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk warna dan transformasi */
+}
+
+/* Efek hover pada judul */
+.work-heading-title:hover {
+    color: #007BFF; /* Mengubah warna saat hover */
+    transform: scale(1.05); /* Memperbesar sedikit saat hover */
+}
+
+
+#sectiontitleHeading {
+    width: 100%; /* Mengatur lebar heading menjadi 100% */
+    transition: background-color 0.3s ease; /* Transisi untuk latar belakang */
+}
+
+.sectiontitle-heading-content {
+    display: flex; /* Mengatur flex untuk tata letak heading */
+    align-items: center; /* Memusatkan item secara vertikal */
+}
+
+.sectiontitle-heading-title {
+    width: 100%; /* Mengatur lebar menjadi 100% untuk centering */
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Memusatkan item secara vertikal */
+    justify-content: center; /* Memusatkan item secara horizontal */
+    border-bottom: 1px solid rgb(0, 0, 0); /* Garis bawah */
+    border-top: 1px solid rgb(0, 0, 0); /* Garis atas */
+    margin-bottom: 20px; /* Jarak bawah */
+    text-align: center; /* Meratakan teks di tengah */
+    padding-top: 3px; /* Padding atas */
+    padding-bottom: 3px; /* Padding bawah */
+    font-weight: bold; /* Menebalkan teks */
+    letter-spacing: 0.5px; /* Jarak antar huruf */
+    font-size: 1.8em; /* Ukuran font untuk judul */
+    line-height: 23px; /* Jarak antar baris */
+    color: #333; /* Warna teks */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transisi untuk warna dan transformasi */
+}
+
+/* Efek hover pada judul */
+.sectiontitle-heading-title:hover {
+    color: #007BFF; /* Mengubah warna saat hover */
+    transform: scale(1.05); /* Memperbesar sedikit saat hover */
+}
+
+/* Portfolio Section */
+.portfolio-wrap {
+    position: relative; /* Membuat posisi relatif untuk ikon */
+    margin-top: 20px; /* Tambahkan jarak di atas gambar */
+}
+
+.portfolio-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1; /* Ikon langsung terlihat */
+    margin-top: 10px; /* Jarak tambahan untuk posisi ikon di luar gambar */
+}
+
+.icon-link {
+    font-size: 4rem; /* Ukuran ikon lebih besar */
+    color: #555; /* Warna ikon agar lebih jelas */
+    transition: transform 0.3s ease, color 0.3s ease; /* Efek transisi */
+}
+
+.icon-link:hover {
+    transform: scale(1.2); /* Membesarkan ikon sedikit saat di-hover */
+    color: #333; /* Warna ikon sedikit lebih gelap saat di-hover */
+}
+
+/* Responsive untuk ukuran lebih kecil */
+@media (max-width: 576px) {
+    .icon-link {
+        font-size: 3rem; /* Mengurangi ukuran ikon pada layar kecil */
+    }
+}
+
+/* Button Styles */
+.btn {
+    margin: 5px;
+}
+
+/* Portfolio Item */
+.card {
+    border: 1px solid #ced4da;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-video {
+    width: 100%;
+    height: auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Modal Styling */
+/* Modal Styling */
+.modal {
+    display: none; /* Modal disembunyikan secara default */
+    position: fixed; /* Tetap di tempat saat di-scroll */
+    z-index: 1000; /* Di atas semua elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    overflow: auto; /* Scroll jika perlu */
+    background-color: rgba(0, 0, 0, 0.9); /* Latar belakang semi-transparan */
+}
+
+/* Gambar Modal */
+.modal-content {
+    margin: auto; /* Pusatkan gambar */
+    display: block; /* Tampilkan sebagai blok */
+    max-width: 90%; /* Batas maksimal lebar gambar */
+    max-height: 90%; /* Batas maksimal tinggi gambar */
+    transition: transform 0.25s ease; /* Animasi zoom */
+    object-fit: contain; /* Pertahankan rasio aspek */
+}
+
+/* Efek zoom saat hover */
+.modal-content:hover {
+    cursor: zoom-in; /* Kursor untuk zoom in */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #sectiontitleHeading {
+        margin-bottom: 30px;
+    }
+
+    .sectiontitle-heading-title {
+        font-size: 2rem;
+    }
+
+    .zoom-btn {
+        top: 10px;
+        left: 10px;
+    }
+}

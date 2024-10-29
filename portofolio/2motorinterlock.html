@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Portofolio - 2 Motor Interlock Wiring</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">2 Motor Interlock Wiring - Detail Portofolio</h1>
+        <div class="portfolio-detail">
+            <div class="portfolio-image">
+                <img src="../asset/portofolio/2motorinterlock.jpg" class="card-img-top img-zoom" alt="Proyek 2" onclick="openImageModal(this.src)">
+            </div>
+            <div class="portfolio-description mt-4">
+                <h2>Deskripsi Proyek: 2 Motor Interlock Wiring</h2>
+
+    <!-- Latar Belakang Proyek -->
+    <section id="background">
+        <h2>1. Latar Belakang</h2>
+        <p>Proyek <strong>2 Motor Interlock Wiring</strong> ini dirancang untuk mempelajari sistem penguncian antar motor (interlock) menggunakan perangkat lunak <em>Simurelay</em> sebagai alat bantu dalam desain dan simulasi wiring. Sistem interlock pada dua motor memastikan bahwa hanya satu motor yang bisa beroperasi dalam satu waktu, yang penting untuk mencegah kerusakan akibat beban berlebih.</p>
+    </section>
+
+    <!-- Tujuan Proyek -->
+    <section id="objectives">
+        <h2>2. Tujuan</h2>
+        <ul>
+            <li>Mengembangkan dan mensimulasikan rangkaian wiring motor interlock dengan aman menggunakan aplikasi <em>Simurelay</em>.</li>
+            <li>Mengurangi risiko kegagalan operasional akibat beban berlebih.</li>
+            <li>Menyederhanakan dan memvalidasi desain interlock sebelum implementasi nyata di lapangan.</li>
+        </ul>
+    </section>
+
+    <!-- Komponen dan Perangkat yang Digunakan dalam Simulasi -->
+    <section id="components">
+        <h2>3. Komponen dan Perangkat yang Digunakan dalam Simulasi</h2>
+        <ul>
+            <li><strong>Motor Listrik</strong>: Simulasi menggunakan dua motor untuk merepresentasikan skenario motor ganda yang terkoneksi dalam interlock.</li>
+            <li><strong>Kontaktor</strong>: Digunakan untuk kontrol daya pada motor dan dikonfigurasi di <em>Simurelay</em> agar hanya satu motor yang aktif saat satu lainnya dalam mode siaga.</li>
+            <li><strong>Relai Interlock</strong>: Menggunakan relai untuk membangun logika interlock yang memastikan kedua motor tidak dapat aktif secara bersamaan.</li>
+            <li><strong>Push Button ON/OFF</strong>: Tombol virtual di <em>Simurelay</em> memungkinkan kendali manual, mensimulasikan aksi operator untuk menyalakan atau mematikan motor.</li>
+            <li><strong>Indicator Lamp</strong>: Indikator visual dalam simulasi untuk menunjukkan status aktif atau non-aktifnya motor.</li>
+        </ul>
+    </section>
+
+    <!-- Prinsip Kerja Sistem Interlock di Simurelay -->
+    <section id="working-principle">
+        <h2>4. Prinsip Kerja Sistem Interlock di Simurelay</h2>
+        <p>Di <em>Simurelay</em>, sistem interlock diatur dengan logika sebagai berikut:</p>
+        <ul>
+            <li>Ketika Motor 1 aktif, kontak bantu pada kontaktor Motor 1 akan memutus arus kontrol ke kontaktor Motor 2, mencegah Motor 2 menyala.</li>
+            <li>Sebaliknya, ketika Motor 2 diaktifkan, kontak bantu pada kontaktor Motor 2 akan memutus aliran ke Motor 1.</li>
+        </ul>
+        <p><em>Simurelay</em> memungkinkan simulasi ini secara real-time sehingga teknisi dapat mengamati dan memvalidasi bahwa hanya satu motor yang berjalan dalam satu waktu sesuai dengan logika interlock.</p>
+    </section>
+
+    <!-- Langkah Desain dan Simulasi di Simurelay -->
+    <section id="design-steps">
+        <h2>5. Langkah Desain dan Simulasi di Simurelay</h2>
+        <ul>
+            <li><strong>Desain Wiring Diagram</strong>: Mulai dengan menambahkan motor, kontaktor, relay, dan tombol ke workspace di <em>Simurelay</em>. Komponen dihubungkan sesuai dengan skema wiring diagram 2 Motor Interlock.</li>
+            <li><strong>Penyesuaian dan Pengaturan Relay</strong>: Relay dikonfigurasi untuk menciptakan logika interlock yang memastikan motor tidak bekerja bersamaan.</li>
+            <li><strong>Simulasi Real-time</strong>: Setelah selesai, <em>Simurelay</em> memberikan kemampuan untuk menjalankan simulasi interlock, sehingga teknisi dapat memverifikasi logika kerja dan memastikan sistem berjalan sesuai desain.</li>
+        </ul>
+    </section>
+
+    <!-- Manfaat Penggunaan Simurelay dalam Proyek Ini -->
+    <section id="benefits">
+        <h2>6. Manfaat Penggunaan Simurelay dalam Proyek Ini</h2>
+        <ul>
+            <li><strong>Desain dan Validasi Cepat</strong>: <em>Simurelay</em> memudahkan perancangan rangkaian secara akurat dan dapat divalidasi langsung melalui simulasi.</li>
+            <li><strong>Pengurangan Kesalahan Wiring</strong>: Desain yang tervalidasi mengurangi risiko kesalahan pada tahap implementasi nyata.</li>
+            <li><strong>Efisiensi Waktu dan Biaya</strong>: Simulasi meminimalkan waktu untuk debugging dan memungkinkan identifikasi masalah lebih dini.</li>
+            <li><strong>Real-Time Feedback</strong>: <em>Simurelay</em> memungkinkan pemantauan status motor dan komponen lainnya, membantu teknisi memahami setiap aspek rangkaian dengan jelas.</li>
+        </ul>
+    </section>
+
+    <!-- Aplikasi Sistem di Industri -->
+    <section id="industry-applications">
+        <h2>7. Aplikasi Sistem di Industri</h2>
+        <p>Desain interlock motor ganda yang disimulasikan di <em>Simurelay</em> ini berpotensi untuk diterapkan dalam sistem pompa, conveyor, atau ventilasi industri yang membutuhkan kontrol bergantian. Dengan simulasi ini, teknisi dapat menguji dan memverifikasi keandalan sistem sebelum penerapan di lapangan, yang sangat penting dalam industri manufaktur dan pemrosesan material.</p>
+    </section>
+
+    <!-- Tampilan Simulasi Wiring Diagram -->
+    <section id="simulation-view">
+        <h2>8. Tampilan Simulasi Wiring Diagram</h2>
+        <p>Pada akhir proyek, <em>Simurelay</em> menyediakan visualisasi wiring yang realistis dari semua komponen beserta koneksinya, yang dapat digunakan sebagai referensi bagi teknisi di lapangan. Diagram ini menunjukkan hubungan antar kontaktor, relay, dan motor, sehingga memastikan pemahaman penuh tentang pengoperasian sistem.</p>
+    </section>
+    <a href="../cvcoba.html" class="btn btn-primary mt-3">Kembali ke Portofolio</a>
+</body>
+</html>

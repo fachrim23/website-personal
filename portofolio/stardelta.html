@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Portofolio - Star-Delta Wiring</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Star-Delta Wiring - Detail Portofolio</h1>
+        <div class="portfolio-detail">
+            <div class="portfolio-image">
+                <img src="../asset/portofolio/StarDelta.jpg" class="card-img-top img-zoom" alt="Proyek 2" onclick="openImageModal(this.src)">
+            </div>
+            <div class="portfolio-description mt-4">
+                <h2>Deskripsi Proyek: Star-Delta Wiring</h2>
+
+    <!-- Latar Belakang Proyek -->
+    <section id="latar-belakang">
+        <h2>1. Latar Belakang</h2>
+        <p>Wiring Star-Delta dirancang untuk mengendalikan motor listrik tiga fasa dengan metode star-delta starting. Teknik ini digunakan untuk mengurangi lonjakan arus listrik yang besar pada saat motor mulai dinyalakan, yang berpotensi menyebabkan kerusakan pada komponen listrik serta menghemat energi. Metode ini umum digunakan di berbagai aplikasi industri yang memerlukan start-up halus, seperti pompa, kompresor, dan conveyor.</p>
+    </section>
+
+    <!-- Tujuan Proyek -->
+    <section id="tujuan-proyek">
+        <h2>2. Tujuan</h2>
+        <ul>
+            <li>Mengembangkan rangkaian wiring yang dapat mengalihkan motor dari konfigurasi star ke delta secara otomatis.</li>
+            <li>Meminimalkan lonjakan arus awal saat motor dinyalakan untuk meningkatkan umur motor dan komponen listrik lainnya.</li>
+            <li>Mengimplementasikan rangkaian yang aman dan efektif untuk kebutuhan industri berat.</li>
+        </ul>
+    </section>
+
+    <!-- Komponen yang Digunakan -->
+    <section id="komponen">
+        <h2>3. Komponen yang Digunakan dalam Wiring Star-Delta</h2>
+        <ul>
+            <li><strong>Motor Tiga Fasa:</strong> Motor ini merepresentasikan beban yang memerlukan kontrol start-up halus.</li>
+            <li><strong>Kontaktor Star, Delta, dan Main:</strong> Tiga kontaktor diperlukan untuk mengatur aliran arus listrik ke motor dalam mode star dan delta.</li>
+            <li><strong>Timer (Relay Waktu):</strong> Digunakan untuk menentukan jeda waktu antara perpindahan dari mode star ke delta.</li>
+            <li><strong>Overload Relay:</strong> Untuk melindungi motor dari kondisi arus berlebih.</li>
+            <li><strong>Push Button ON/OFF:</strong> Tombol tekan untuk mengaktifkan dan mematikan sistem.</li>
+            <li><strong>Lampu Indikator:</strong> Menunjukkan status motor dan mode operasi (star atau delta).</li>
+        </ul>
+    </section>
+
+    <!-- Prinsip Kerja Sistem Star-Delta -->
+    <section id="prinsip-kerja">
+        <h2>4. Prinsip Kerja Sistem Star-Delta</h2>
+        <p>Sistem Star-Delta pada rangkaian ini bekerja dengan mengalihkan motor dari mode star ke mode delta setelah motor mencapai kecepatan tertentu, melalui logika berikut:</p>
+        <ul>
+            <li><strong>Mode Star (Bintang):</strong> Saat tombol start ditekan, kontaktor utama dan kontaktor star akan aktif, menyebabkan motor bekerja dalam mode star, membatasi arus awal.</li>
+            <li><strong>Peralihan ke Mode Delta (Segitiga):</strong> Setelah waktu tertentu (sesuai pengaturan timer), kontaktor star akan mati dan kontaktor delta akan aktif.</li>
+        </ul>
+    </section>
+
+    <!-- Langkah Desain dan Pengawatan -->
+    <section id="langkah-desain">
+        <h2>5. Langkah Desain dan Pengawatan</h2>
+        <ol>
+            <li><strong>Pemasangan Komponen:</strong> Menyiapkan motor, kontaktor utama, kontaktor star, kontaktor delta, relay waktu, dan overload relay.</li>
+            <li><strong>Pengaturan Timer:</strong> Menyetel timer untuk menentukan waktu peralihan dari mode star ke delta.</li>
+            <li><strong>Pengujian Sistem Star-Delta:</strong> Menguji sistem untuk memastikan motor dapat beroperasi dengan aman dalam mode star dan delta.</li>
+        </ol>
+    </section>
+
+    <!-- Manfaat dan Aplikasi -->
+    <section id="manfaat-aplikasi">
+        <h2>6. Manfaat dan Aplikasi</h2>
+        <ul>
+            <li><strong>Mengurangi Lonjakan Arus Awal:</strong> Menekan lonjakan arus listrik pada start-up.</li>
+            <li><strong>Efisiensi Energi:</strong> Menghemat energi pada saat start-up.</li>
+            <li><strong>Keamanan Operasional:</strong> Start-up yang lebih halus dan aman untuk motor berkapasitas besar.</li>
+        </ul>
+    </section>
+
+    <!-- Aplikasi di Industri -->
+    <section id="aplikasi-industri">
+        <h2>7. Aplikasi di Industri</h2>
+        <p>Aplikasi sistem Star-Delta banyak ditemukan dalam industri yang memerlukan pengendalian arus saat start-up motor, seperti pada sistem pompa, blower, kompresor, dan conveyor belt. Metode ini penting untuk meningkatkan efisiensi dan keamanan sistem di berbagai aplikasi mesin berdaya tinggi.</p>
+    </section>
+
+    <!-- Tampilan Wiring Diagram Star-Delta -->
+    <section id="tampilan-diagram">
+        <h2>8. Tampilan Wiring Diagram Star-Delta</h2>
+        <p>Wiring diagram Star-Delta menampilkan seluruh koneksi antara kontaktor, timer, relay, motor, dan tombol kendali. Diagram ini membantu teknisi memahami konfigurasi secara lengkap sebelum diterapkan di lapangan.</p>
+    </section>
+    <a href="../cvcoba.html" class="btn btn-primary mt-3">Kembali ke Portofolio</a>
+</body>
+</html>

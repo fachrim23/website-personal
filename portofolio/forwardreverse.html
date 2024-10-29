@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Portofolio - Forward Reverse Wiring</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Forward Reverse Wiring - Detail Portofolio</h1>
+        <div class="portfolio-detail">
+            <div class="portfolio-image">
+                <img src="../asset/portofolio/forwardreverse.jpg" class="card-img-top img-zoom" alt="Proyek 2" onclick="openImageModal(this.src)">
+            </div>
+            <div class="portfolio-description mt-4">
+                <h2>Deskripsi Proyek: Forward Reverse Wiring</h2>
+
+     <!-- Latar Belakang Proyek -->
+     <section id="latar-belakang">
+        <h2>Latar Belakang</h2>
+        <p>Proyek <strong>Wiring Forward Reverse</strong> dirancang untuk mengendalikan arah putaran motor listrik, baik maju (forward) maupun mundur (reverse), dengan memanfaatkan konfigurasi pengawatan yang aman dan sederhana. Teknik ini sangat umum digunakan dalam berbagai aplikasi industri, terutama pada mesin yang membutuhkan pengaturan arah putaran, seperti konveyor dan lift.</p>
+    </section>
+
+    <!-- Tujuan Proyek -->
+    <section id="tujuan-proyek">
+        <h2>Tujuan</h2>
+        <ul>
+            <li>Mengembangkan rangkaian wiring yang dapat mengubah arah putaran motor secara aman.</li>
+            <li>Menyediakan pengamanan agar motor tidak dapat beroperasi dalam mode maju dan mundur secara bersamaan.</li>
+            <li>Mengimplementasikan rangkaian interlock untuk mencegah hubungan pendek akibat kesalahan operasi.</li>
+        </ul>
+    </section>
+
+    <!-- Komponen yang Digunakan -->
+    <section id="komponen">
+        <h2>Komponen yang Digunakan dalam Wiring Forward Reverse</h2>
+        <ul>
+            <li><strong>Motor Listrik:</strong> Motor AC digunakan sebagai penggerak utama, merepresentasikan berbagai aplikasi motor yang membutuhkan kendali arah.</li>
+            <li><strong>Kontaktor Forward dan Reverse:</strong> Dua kontaktor digunakan untuk mengontrol arah putaran motor. Masing-masing kontaktor bertanggung jawab untuk putaran maju dan mundur.</li>
+            <li><strong>Relay Interlock:</strong> Menyediakan keamanan dengan logika interlock, mencegah kedua kontaktor aktif secara bersamaan.</li>
+            <li><strong>Push Button ON/OFF (Maju dan Mundur):</strong> Tombol tekan ON/OFF terpisah untuk mengaktifkan mode maju atau mundur sesuai kebutuhan.</li>
+            <li><strong>Lampu Indikator:</strong> Menunjukkan status motor apakah sedang dalam mode maju atau mundur.</li>
+        </ul>
+    </section>
+
+    <!-- Prinsip Kerja Sistem Forward Reverse -->
+    <section id="prinsip-kerja">
+        <h2>Prinsip Kerja Sistem Forward Reverse</h2>
+        <p>Sistem <strong>Forward Reverse</strong> pada rangkaian ini bekerja dengan prinsip pergantian arus pada motor melalui kontaktor:</p>
+        <ul>
+            <li><strong>Mode Forward (Maju):</strong> Saat tombol maju ditekan, kontaktor forward aktif, dan arus listrik mengalir ke motor dalam konfigurasi putaran maju. Kontak bantu pada kontaktor forward akan mengunci (interlock) kontaktor reverse, sehingga tidak memungkinkan motor beroperasi mundur.</li>
+            <li><strong>Mode Reverse (Mundur):</strong> Saat tombol mundur ditekan, kontaktor reverse aktif, membalik arus pada motor sehingga berputar dalam arah sebaliknya. Kontak bantu pada kontaktor reverse akan mengunci kontaktor forward, mencegah kedua mode berjalan secara bersamaan.</li>
+        </ul>
+    </section>
+
+    <!-- Langkah Desain dan Pengawatan -->
+    <section id="langkah-desain">
+        <h2>Langkah Desain dan Pengawatan</h2>
+        <ul>
+            <li><strong>Pemasangan Komponen:</strong> Rangkaian dimulai dengan pemasangan motor, dua kontaktor, relay interlock, dan tombol ON/OFF.</li>
+            <li><strong>Pengaturan Interlock:</strong> Relay dihubungkan dengan kontak bantu untuk memastikan hanya satu kontaktor yang dapat aktif dalam satu waktu.</li>
+            <li><strong>Pengujian Sistem Forward Reverse:</strong> Uji coba dilakukan untuk memastikan motor dapat beroperasi maju dan mundur dengan aman, tanpa adanya arus pendek atau aktifasi ganda.</li>
+        </ul>
+    </section>
+
+    <!-- Manfaat dan Aplikasi -->
+    <section id="manfaat">
+        <h2>Manfaat dan Aplikasi</h2>
+        <ul>
+            <li><strong>Pengendalian Arah Putaran Motor:</strong> Dapat digunakan dalam aplikasi seperti konveyor yang membutuhkan pembalikan arah.</li>
+            <li><strong>Keamanan Operasional:</strong> Sistem interlock mencegah potensi kegagalan operasional akibat konflik arah.</li>
+            <li><strong>Efisiensi Waktu dan Biaya:</strong> Dengan menggunakan teknik wiring ini, operator dapat mengubah arah putaran motor dengan mudah tanpa risiko operasional.</li>
+        </ul>
+    </section>
+
+    <!-- Aplikasi di Industri -->
+    <section id="aplikasi-industri">
+        <h2>Aplikasi di Industri</h2>
+        <p>Aplikasi <strong>Forward Reverse</strong> ini banyak digunakan di industri yang memerlukan perubahan arah motor dalam berbagai aplikasi mesin, seperti pengangkutan material, lift, dan conveyor belt. Desain ini memungkinkan kontrol arah yang akurat dan aman dalam operasional sehari-hari di pabrik.</p>
+    </section>
+
+    <!-- Tampilan Wiring Diagram Forward Reverse -->
+    <section id="diagram-wiring">
+        <h2>Tampilan Wiring Diagram Forward Reverse</h2>
+        <p>Pada akhir proyek, wiring diagram menampilkan semua koneksi antara kontaktor, relay, motor, dan tombol kendali. Diagram ini memastikan bahwa setiap teknisi dapat memahami konfigurasi forward reverse dengan jelas, yang penting untuk pemeliharaan dan operasional di lapangan.</p>
+    </section>
+    <a href="../cvcoba.html" class="btn btn-primary mt-3">Kembali ke Portofolio</a>
+</body>
+</html>
